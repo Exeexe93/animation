@@ -7,8 +7,12 @@ body {
   font-family: sans-serif;
 }
 
+.label-animation {
+  width: 40vh;
+}
+
 .form {
-  width: 50%;
+  width: 100%;
   position: relative;
   height: 50px;
   overflow: hidden;
