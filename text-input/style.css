@@ -11,14 +11,18 @@ body {
   width: 40vh;
 }
 
-.form {
+.label-animation h3 {
+  margin-top: 2rem;
+}
+
+.name-input {
   width: 100%;
   position: relative;
   height: 50px;
   overflow: hidden;
 }
 
-.form input {
+.name-input input {
   width: 100%;
   height: 100%;
   color: slateblue;
@@ -27,7 +31,7 @@ body {
   padding-top: 5px;
 }
 
-.form label {
+.name-input label {
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -37,7 +41,7 @@ body {
   border-bottom: 1px solid black;
 }
 
-.form label::after {
+.name-input label::after {
   content: "";
   position: absolute;
   left: 0px;
@@ -56,14 +60,24 @@ body {
   transition: all 0.5s ease;
 }
 
-.form input:focus + .label-name .content-name,
-.form input:valid + .label-name .content-name {
+.name-input input:focus + .label-name .content-name,
+.name-input input:valid + .label-name .content-name {
   transform: translateY(-150%);
   font-size: 14px;
   color: slateblue;
 }
 
-.form input:focus + .label-name::after,
-.form input:valid + .label-name::after {
+.name-input input:focus + .label-name::after,
+.name-input input:valid + .label-name::after {
   transform: translateX(0%);
+}
+
+.address-input {
+  width: 100%;
+  position: relative;
+  height: 50px;
+}
+
+.address-input input {
+  width: 10px;
 }
