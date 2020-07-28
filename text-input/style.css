@@ -71,13 +71,3 @@ body {
 .name-input input:valid + .label-name::after {
   transform: translateX(0%);
 }
-
-.address-input {
-  width: 100%;
-  position: relative;
-  height: 50px;
-}
-
-.address-input input {
-  width: 10px;
-}
