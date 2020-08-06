@@ -12,7 +12,7 @@ body {
 
 #logo {
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   animation: fill 0.5s ease forwards 6.3s;
@@ -81,5 +81,70 @@ body {
   }
   to {
     fill: white;
+  }
+}
+
+/* Loading animation */
+
+#loading {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* -69deg is at the start, 45deg is at the end 
+7s animation is to sync with the programmer words animation on top*/
+#loading #loading-pin {
+  transform-origin: bottom;
+  animation: loading 7s ease forwards;
+}
+
+@keyframes loading {
+  from {
+    rotate: -69deg;
+  }
+  to {
+    rotate: 45deg;
+  }
+}
+
+#loading #first-part {
+  /* linear-gradient(to right, black 50%, white 50%); */
+}
+
+.start-stop {
+  stop-color: white;
+  animation: change-color 2s ease forwards;
+}
+
+.quarter-stop {
+  stop-color: white;
+  animation: change-color 2s ease forwards 1s;
+}
+
+.mid-stop {
+  stop-color: white;
+  animation: change-color 2s ease forwards 1.5s;
+}
+
+.three-quarter-stop {
+  stop-color: white;
+  animation: change-color 3.3s ease forwards 2s;
+}
+
+.ease-stop {
+  stop-color: white;
+  animation: change-color 3.5s ease forwards 2.8s;
+}
+
+.end-stop {
+  stop-color: white;
+  animation: change-color 6s ease forwards 3s;
+}
+
+@keyframes change-color {
+  to {
+    stop-color: #6c63ff;
   }
 }
